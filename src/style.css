@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --title-font: 'Open Sans',sans-serif;
+    --text-font: 'Inter', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+header {
+    background: #191a16;
+    color: white;
+    padding-bottom: 4.8rem;
+}
+
+header .container{
+    display: flex;
+    justify-content: center;
+}
+
+header .container .header-content {
+    width: 45rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    line-height: 2.5rem;
+
+    margin: 0 8rem;
+}
+
+header .container .header-content .title{
+    font-family: var(--title-font);
+    margin: 0 0 1.6rem;
+    font-weight: 600;
+}
+header .container .header-content .title + .title {
+    font-weight: 500;
+}
+
+header .container .header-content .text {
+    font-family: var(--text-font);
+}
+
+header .container .header-content img {
+    width: 20rem;
+    height: 20rem;
+}
+
+header .container .image-header-right,
+header .container .image-header-left {
+    margin-top: 10rem;
+}
+
+@media (max-width: 1279px){
+    header .container .image-header-right,
+    header .container .image-header-left{
+        display: none;
+    } 
+
+    header .container .header-content .title:first-of-type{
+        line-height: 4rem;
+    }
+
+    header .container .header-content .title + .title {
+        line-height: 2.8rem;
+    }
+
+}
