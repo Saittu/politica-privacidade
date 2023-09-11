@@ -64,6 +64,59 @@ header .container .image-header-left {
     margin-top: 10rem;
 }
 
+.privacidade {
+    padding-top: 5rem;
+}
+
+.privacidade img,
+.anuncios img,
+.cookies img,
+.the-3rd img{
+    width: 55rem;
+    height: 45rem;
+    padding: 4.5rem 0 3rem 0;
+}
+
+.anuncios,
+.cookies,
+.the-3rd {
+    padding-top: 1.2rem;
+}
+
+.privacidade,
+.anuncios,
+.cookies,
+.the-3rd {
+    display: flex;
+    width: 120rem;
+    gap: 20rem;
+    margin: auto;
+    align-items: center;
+}
+
+.privacidade .two-column h2,
+.anuncios .column-anuncios-text h3,
+.cookies .column-cookies-text h3,
+.the-3rd .column-the-3rd-text h3{
+    padding: 3.5rem 0 2rem 0;
+    font-family: var(--title-font);
+}
+
+.privacidade .two-column p,
+.anuncios .column-anuncios-text p,
+.cookies .column-cookies-text p,
+.the-3rd .column-the-3rd-text p {
+    font-family: var(--title-font);
+}
+
+.anuncios {
+    gap: 10rem  
+}
+
+.the-3rd {
+    gap: 27rem;
+}
+
 @media (max-width: 1279px){
     header .container .image-header-right,
     header .container .image-header-left{
