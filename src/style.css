@@ -117,6 +117,93 @@ header .container .image-header-left {
     gap: 27rem;
 }
 
+footer{
+    width: 100%;
+    color: #fff;
+    padding-top: 4rem;
+}
+
+.conteudo {
+    background-color: #191a16;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 4rem;
+}
+
+.conteudo .logo-and-text img{
+    width: 18rem;
+    height: 18rem;
+    margin-left: 7rem;
+}
+
+.conteudo h3 {
+    font-family: var(--title-font);
+    padding-bottom: 2rem;
+}
+
+.termos-privacidade a p{
+    padding-bottom: 1.5rem;
+    transition: all 0.4s;
+}
+
+.termos-privacidade a p:hover {
+    opacity: 0.8;
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--text-font);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+
+.redes .footer-link,
+.contatos .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    color: #ddd;
+    border-radius: 50%;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.redes .footer-link,
+.contatos .footer-link{
+    font-size: 2rem;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#tiktok {
+    background: linear-gradient(#ff0051a1, #00f2ea,	#000000);
+}
+
+#facebook {
+    background: #0e76a8;
+}
+
+#whatsapp {
+    background: #25d366;
+}
+
+#e-mail {
+    background: #0b5172;
+}
+
+
+
 @media (max-width: 1279px){
     header .container .image-header-right,
     header .container .image-header-left{
@@ -131,4 +218,65 @@ header .container .image-header-left {
         line-height: 2.8rem;
     }
 
+    .set-section section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .set-section section img{
+        height: 50vh;
+        width: 100%;
+        padding: 2rem 0;
+        
+    }
+
+    .set-section .privacidade,
+    .set-section .anuncios,
+    .set-section .cookies,
+    .set-section .the-3rd{
+        width: auto;
+        margin: 0 3rem;
+        gap: 5rem;
+    }
+
+    .set-section .anuncios,
+    .set-section .the-3rd{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .set-section .privacidade,
+    .set-section .cookies{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .conteudo .redes,
+    .conteudo .contatos{
+        padding-top: 3rem;
+    }
+    
+}
+
+@media (min-width: 950px) AND (max-width:1278px) {
+    .set-section section img{
+        height: 50vh;
+        width: 80rem;
+        padding: 2rem 0;
+    }    
+
+    .conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .conteudo .redes {
+        margin-left: 7rem ;
+    }
 }
